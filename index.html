@@ -98,6 +98,30 @@
   .btn-ghost:hover{border-color:var(--gold-bright);color:var(--gold-bright)}
   @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 
+  .hero .eyebrow{
+    font-size:.92rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--gold-bright);
+    animation:rise .9s cubic-bezier(.2,.7,.2,1) both;
+  }
+  .hero .fee-hero{
+    font-family:"Fraunces",serif;font-weight:500;
+    font-size:clamp(5.5rem,17vw,13rem);
+    line-height:.92;letter-spacing:-.025em;
+    color:var(--cream);margin-top:22px;
+    animation:rise .9s .08s cubic-bezier(.2,.7,.2,1) both;
+  }
+  .hero .fee-hero .pc{color:var(--gold-bright)}
+  .hero .tagline{
+    font-family:"Fraunces",serif;font-weight:460;
+    font-size:clamp(1.35rem,3vw,2rem);line-height:1.25;
+    margin-top:26px;max-width:24ch;
+    animation:rise .9s .16s cubic-bezier(.2,.7,.2,1) both;
+  }
+  .hero .fine{
+    margin-top:26px;font-size:.83rem;color:var(--muted-dark);max-width:56ch;
+    animation:rise .9s .3s cubic-bezier(.2,.7,.2,1) both;
+  }
+
   /* Terrace illustration */
   .terrace{display:block;width:100%;margin-top:70px;color:var(--gold);opacity:.85}
 
@@ -207,9 +231,9 @@
   <div class="wrap head-in">
     <a class="wordmark" href="#">Premier <em>Gold</em> Investments</a>
     <nav aria-label="Main">
+      <a href="#offer">5% offer</a>
       <a href="#services">Services</a>
       <a href="#coverage">Coverage</a>
-      <a href="#process">How it works</a>
       <a class="cta" href="#contact">Speak to us</a>
     </nav>
   </div>
@@ -217,13 +241,16 @@
 
 <main>
   <div class="hero">
-    <div class="wrap hero-in">
-      <h1>Ownership, without the workload.</h1>
-      <p class="sub">Premier Gold Investments manages residential property across London for landlords and investors — rent in on time, repairs resolved, compliance never missed.</p>
+    <div class="wrap hero-in" id="offer">
+      <div class="eyebrow">London special offer</div>
+      <div class="fee-hero">from 5<span class="pc">%</span></div>
+      <h1 class="tagline">Full property management, across London.</h1>
+      <p class="sub">The complete service — tenancy, rent collection, repairs, compliance and reporting. Nothing stripped out, from 5% of rent collected.</p>
       <div class="actions">
-        <a class="btn btn-gold" href="#contact">Speak to us</a>
-        <a class="btn btn-ghost" href="#services">What we handle</a>
+        <a class="btn btn-gold" href="#contact">Claim the offer</a>
+        <a class="btn btn-ghost" href="#services">What's included</a>
       </div>
+      <p class="fine">From 5% + VAT of monthly rent collected, for new managed instructions in Greater London. Final rate confirmed on review of the property. Terms apply.</p>
     </div>
     <!-- London terrace line illustration -->
     <svg class="terrace" viewBox="0 0 1440 210" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMax slice">
@@ -288,7 +315,7 @@
   <section class="statement">
     <div class="wrap">
       <span class="kicker">Premier Gold Investments</span>
-      <p class="serif">A London property should be an asset, not a second job. We run the tenancy, the trades and the paperwork — <em>you see the statement, not the stress.</em></p>
+      <p class="serif">Ownership, without the workload. We run the tenancy, the trades and the paperwork — <em>you see the statement, not the stress.</em></p>
     </div>
   </section>
 
@@ -386,8 +413,8 @@
           <a href="tel:+442038613469">020 3861 3469</a>
         </div>
         <address>
-          <strong>Office</strong>
-          Premier Gold Investments Ltd<br>London
+          <strong>Registered office</strong>
+          Premier Gold Investments Ltd<br>20 Seymour Mews, London W1H 6BQ
         </address>
       </div>
     </div>
@@ -396,8 +423,8 @@
 
 <footer>
   <div class="wrap">
-    <div>© 2026 Premier Gold Investments Ltd · Registered in England &amp; Wales</div>
-    <div>Residential property management, London</div>
+    <div>© 2026 Premier Gold Investments Ltd · Residential property management, London</div>
+    <div>Registered in England &amp; Wales No. 08044166 · Registered office: 20 Seymour Mews, London W1H 6BQ</div>
   </div>
 </footer>
 
